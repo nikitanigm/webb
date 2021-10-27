@@ -1,4 +1,23 @@
-p
-{
-    color: red;
+.container{
+    max-width: 1170px;
+    margin: auto;
+    height: 500px;
+}
+.line{
+    background: #44C793;
+    width: 200px;
+    height: 1px;
+    margin: auto;
+}
+.title{
+    color:rgb(55,55,55);
+    font-size: 39px;
+    line-height: 48px;
+    text-align: center;
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 600;
+}
+.prize{
+    display: flex;
+    justify-content: space-between;
 }

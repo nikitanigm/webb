@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./libs/fontawesome/all.min.css">
     <title>Document</title>
 </head>
@@ -53,7 +54,7 @@
             </div>
         </div>
     </section>
-    <section>
+    <section hidden>
         <div class="parent">
             <div class="div1"> <h2><i class="fab fa-accessible-icon sss"></i>title 1</h2> Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur tempora dolorum illum excepturi optio voluptas amet, natus, vitae fugiat, ducimus earum inventore aliquid nisi cumque expedita velit omnis unde quaerat?</div>
             <div class="div2"> <img src="./images/moln.jpg" alt=""></div>
@@ -66,10 +67,33 @@
             <div class="div8"><img src="./images/car3.jpg" alt=""> </div>
             </div>
     </section>
-    <section>
-        <div class="container conditions">
+    <section class="conditions">
+        <div class="container">
             <div class="line"></div>
             <h2 class="title">Условия участия</h2>
+            <div class="form-wrapper">
+                <div class="form-wrapper__item">
+                <form class="form-for-card">
+                    <h3 class="form-title">Оплатите участие</h3>
+                    <input type="text" name="persoName" id="persoName" placeholder="Имя и Фамилия">
+                    <input type="text" name="cardNumber" id="cardNumber" placeholder="Номер карты">
+                    <div class="card-info">
+                        <input type="text" name="cardData" id="cardData" placeholder="Срок действия">
+                        <input type="text" name="cardCVV" id="cardCVV" placeholder="CVV код">
+                    </div>
+                    <input type="submit" value="Оплатить" class="submit">
+                </form>
+            </div>
+            <div class="form-wrapper__item">
+                <form class="form-for-card">
+                    <h3 class="form-title">Введите код</h3>
+                    <input type="text" name="persoCode" id="persoCode" placeholder="Код">
+                    <input type="file" name="persoFile" id="persoFile">
+                    <textarea name="review" id="review">Напишите отзыв</textarea>
+                    <input type="submit" value="Отправить" class="submit otpr">
+                </form>
+            </div>
+            </div>
         </div>  
     </section>
 </body>

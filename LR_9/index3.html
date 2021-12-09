@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Лабораторная работа 9</title>
+</head>
+<body>
+  
+  <button type="button" onclick="startTest()">Нажмите</button>
+
+  <script>
+    function startTest() {
+      let name = prompt('Введите ваше имя: ');
+      let result = 0;
+
+      let temp = confirm("228 + 1337 = 0?");
+      if (!temp) {
+        alert("Ответ правильный");
+        result += 1;
+      }
+
+      temp = confirm("Корень из 64 равно 8?");
+      if (temp) {
+        alert("Ответ правильный");
+        result += 1;
+      }
+
+      temp = confirm("Производная синуса равна косинусу?");
+      if (temp) {
+        alert("Ответ правильный");
+        result += 1;
+      }
+
+      temp = confirm("20% от 100 равно 228?");
+      if (!temp) {
+        alert("Ответ правильный");
+        result += 1;
+      }
+
+      temp = confirm("ln(e) = 1?");
+      if (temp) {
+        alert("Ответ правильный");
+        result += 1;
+      }
+
+      alert(name+", вы сдали тест на  " +result);
+    }
+  </script>
+  
+</body>
+</html>
